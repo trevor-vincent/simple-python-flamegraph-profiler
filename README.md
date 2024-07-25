@@ -59,10 +59,10 @@ To convert the profiling output to a FlameGraph, follow these steps:
 
 2. Use the `flamegraph.pl` script to generate the FlameGraph from the `.stacks` file:
     ```bash
-    ./FlameGraph/flamegraph.pl example.stacks > example_flamegraph.svg
+    ./FlameGraph/flamegraph.pl example.stacks > example.svg
     ```
 
-3. Open the generated `example_flamegraph.svg` file in a web browser to visualize the FlameGraph.
+3. Open the generated [example.svg](example.svg) file in a web browser to visualize the FlameGraph.
 
 ## License
 
