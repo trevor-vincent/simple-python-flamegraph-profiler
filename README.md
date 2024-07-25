@@ -47,9 +47,7 @@ if __name__ == "__main__":
 
 ### Output
 
-The profiler will generate a `.stacks` file containing the profiling results. This file will be named based on your script name with a `.stacks` suffix.
-
-For example, if your script is named `example.py`, the output file will be `example.stacks`.
+The profiler will generate a `.stacks` file containing the profiling results that is directly readable by Brendan Gregg's Flamegraph program.
 
 ### Converting the stacks file to a FlameGraph
 
