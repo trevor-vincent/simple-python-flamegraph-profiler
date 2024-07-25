@@ -15,12 +15,14 @@ This repository contains a simple sampling-based profiler for Python programs. I
 from profiler import Sampler
 
 def some_function():
-    for i in range(1000000):
-        pass
+    b = 0    
+    for i in range(100000000):
+        b += 1
 
 def another_function():
-    for i in range(500000):
-        pass
+    c = 0
+    for i in range(100000000):
+        c += 1
 
 def main():
     # Initialize the sampler
@@ -33,15 +35,16 @@ def main():
     some_function()
     another_function()
 
-    # Stop the sampler
-    sampler.stop()
-
     # Output the collected statistics to a file
     sampler.output_stats("example.stacks")
+    
+    # Stop the sampler
+    sampler.stop()
 
 if __name__ == "__main__":
     main()
 ```
+
 ### Output
 
 The profiler will generate a `.stacks` file containing the profiling results. This file will be named based on your script name with a `.stacks` suffix.
