@@ -1,7 +1,7 @@
 
 # Simple Python Sampling Profiler with FlameGraph Output
 
-This repository contains a simple sampling-based profiler for Python programs. It periodically collects stack traces to analyze the performance of the code. The output can be directly converted to a FlameGraph using Brendan Greggs Flamegraph perl script. 
+This repository contains a simple sampling-based profiler for Python programs. It periodically collects stack traces to analyze the performance of the code. The output can be directly converted to a FlameGraph using Brendan Greggs Flamegraph perl script. Don't be fooled by the simplicity, it is still very accurate and useful.
 
 ## Installation
 
