@@ -70,7 +70,6 @@ class Sampler:
         Returns:
             str: The formatted stack frame.
         """
-        # print(dir(frame.f_code))
         return '{}:{}:{}:{}'.format(frame.f_globals.get('__name__'),
                                     os.path.basename(frame.f_code.co_filename),
                                     frame.f_lineno,
