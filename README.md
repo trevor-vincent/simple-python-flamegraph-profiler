@@ -11,6 +11,7 @@ This repository contains a simple sampling-based profiler for Python programs. I
 
 ### Example
 
+```python
 from profiler import Sampler
 
 def some_function():
@@ -40,7 +41,7 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+```
 ### Output
 
 The profiler will generate a `.stacks` file containing the profiling results. This file will be named based on your script name with a `.stacks` suffix.
